@@ -1,0 +1,10 @@
+int Solution::solve(vector<int> &A) {
+    int max_now=A[0], count=1;
+    for(int i=1;i<A.size();i++){
+        if(A[i]>max_now){
+            count++;
+            max_now=A[i];
+        }
+    }
+    return count;
+}
