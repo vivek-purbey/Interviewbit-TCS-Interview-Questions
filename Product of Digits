@@ -1,0 +1,15 @@
+int Solution::solve(int A) {
+int n, prod=1;
+if(A==0){
+    return 0;
+}
+else{
+while(A!=0){
+    n=A%10; //finding last digit
+    prod=prod*n; //multiply each digit
+    A=A/10; //removing each digit one by one
+}
+return prod;
+}
+}
+//Not forget for zero(0), keep in mind all test cases.
